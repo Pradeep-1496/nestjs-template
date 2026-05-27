@@ -9,7 +9,7 @@ import 'dotenv/config';
 import { ValidationPipe } from '@nestjs/common';
 import { HttpExceptionFilter } from './common/filters/exception-filter';
 import { Logger } from 'nestjs-pino';
-import { TransformInterceptor } from './common/shared/interceptors/transform.interceptor';
+import { TransformInterceptor } from './common/interceptors/transform.interceptor';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestFastifyApplication>(

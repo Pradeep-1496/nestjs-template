@@ -15,8 +15,8 @@ import { UpdateUserRoleDto } from './dto/user-role.dto';
 import { Role } from 'src/common/enums/role.enum';
 import { AuthGuard } from 'src/common/shared/guards/auth.guard';
 import { RolesGuard } from 'src/common/shared/guards/roles.guard';
-import { Roles } from '../../common/shared/decorators/roles.decorator';
-import { CurrentUser } from 'src/common/shared/decorators/current-user.decorator';
+import { Roles } from '../../common/decorators/roles.decorator';
+import { CurrentUser } from 'src/common/decorators/current-user.decorator';
 
 @ApiBearerAuth('access-token')
 @UseGuards(AuthGuard)
